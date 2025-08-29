@@ -1,0 +1,9 @@
+node_modules/
+
+*.log
+
+nodemon.json
+
+.vscode/
+
+.DS_Store
