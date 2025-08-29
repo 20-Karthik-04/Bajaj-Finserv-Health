@@ -3,10 +3,12 @@ const app = express();
 
 app.use(express.json());
 
+require('dotenv').config(); // Only needed locally
+
 const USER_INFO = {
-    user_id: "thalluruyagnasrikarthikeya_11122004",
-    email: "tkarthikeya2004@gmail.com",
-    roll_number: "22BCE1938"
+    user_id: process.env.USER_ID,
+    email: process.env.EMAIL,
+    roll_number: process.env.ROLL_NUMBER
 };
 
 // POST route for /bfhl
